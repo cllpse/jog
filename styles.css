@@ -1,0 +1,67 @@
+@keyframes get-set {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(2deg) scale(1);
+  }
+
+  10% {
+    transform: rotate(1deg) scale(1.15);
+  }
+
+  20% {
+    transform: rotate(2deg) scale(1);
+  }
+
+  30% {
+    transform: rotate(3deg) scale(1.15);
+  }
+
+  40% {
+    transform: rotate(2deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(1deg) scale(1.15);
+  }
+
+  60% {
+    transform: rotate(2deg) scale(1);
+  }
+
+  70% {
+    transform: rotate(3deg) scale(1.15);
+  }
+
+  80% {
+    transform: rotate(2deg) scale(1);
+  }
+
+  90% {
+    transform: rotate(1deg) scale(1.15);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(2deg) scale(1.15);
+  }
+}
+
+.all-jogged-up {
+  width: fit-content !important;
+  padding: 2px 4px !important;
+  background-color: black !important;
+  color: white !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: bold !important;
+  transform: rotate(2deg);
+}
+
+.all-jogged-up:hover {
+  background-color: cyan !important;
+  color: yellow !important;
+  animation: get-set;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
